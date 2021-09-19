@@ -111,13 +111,28 @@ img {
 
 .nav__icons {
   display: inline-flex;
+  position: relative;
 }
-
+.cart__count {
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  background-color: var(--first-color);
+  top: -7.5%;
+  left: 32.5%;
+  border-radius: 50%;
+}
+.cart__count p {
+  color: var(--white-color);
+  font-size: 12px;
+  padding-left: 5.5px;
+  padding-top: 1.5px;
+}
 .icons__item {
   width: 38%;
   display: flex;
   align-items: center;
-  font-size: var(--h2-font-size);
+  font-size: var(--h1-font-size);
 }
 i {
   cursor: pointer;
