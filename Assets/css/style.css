@@ -107,6 +107,7 @@ img {
   font-weight: 600;
   position: relative;
   cursor: pointer;
+  font-size: var(--normal-font-size);
 }
 
 .nav__icons {
@@ -229,14 +230,16 @@ i {
   height: 300px;
   width: 300px;
   -webkit-box-shadow: 0px 0px 15px -3px rgb(0 0 0 / 25%);
+  opacity: 0.9;
   box-shadow: 0px 0px 15px -3px rgb(0 0 0 / 25%);
 }
 .category__cover img {
   width: 53%;
   margin: 0 70px;
 }
-.category__cover img:hover {
-  transform: scaleX(1.01);
+.Section__category:hover {
+  opacity: 1;
+  transform: scale(1.01);
 }
 
 .category__button {
@@ -260,7 +263,7 @@ i {
 }
 
 /* New Arrivals */
-.new__arrivals {
+.arrivals__header {
   position: relative;
   margin: 50px auto 25px;
   width: 40%;
@@ -283,6 +286,7 @@ i {
 .arrival__All {
   padding: 5.5px 12px;
   color: var(--gray-color);
+  font-weight: var(--font-medium);
   background-color: var(--white-color);
   cursor: pointer;
   border-radius: 5px;
@@ -292,12 +296,11 @@ i {
 .select {
   padding: 8px 17px;
   color: var(--gray-color);
+  font-weight: var(--font-medium);
   background-color: var(--white-color);
   border: 0.5px solid #707070;
   cursor: pointer;
   border-radius: 5px;
-
-  /* replace default styling (arrow) */
 }
 .brands__num {
   padding-left: 30px;
@@ -324,4 +327,61 @@ i {
 }
 .select option {
   background-color: var(--white-color);
+}
+/* products */
+.arrivals__products {
+  margin: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.product {
+  box-shadow: 0px 0px 15px -3px rgb(0 0 0 / 15%);
+  border-radius: 13px;
+  width: 200px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product__title {
+  font-weight: var(--font-semi);
+  font-size: 10px;
+}
+.product__info {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.product__price {
+  display: flex;
+  flex-direction: column;
+  margin: 0 13px;
+  font-weight: var(--font-semi);
+}
+.product__price strike {
+  font-size: 16px;
+}
+.product__price span {
+  font-size: 18px;
+}
+.product__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 17px;
+}
+.product__button {
+  background: var(--first-color);
+  padding: 7px 11px;
+  border-radius: 5px;
+  color: white;
+  font-weight: var(--font-semi);
+  transition: 0.5s;
+  font-size: 12px;
+}
+
+.product__button:hover {
+  background: var(--first-color-alt);
 }
